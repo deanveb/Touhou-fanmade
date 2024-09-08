@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dgb7ofu8fx1np"]
+
+[ext_resource type="Script" path="res://Script/BulletPhysicsController.gd" id="1_y777e"]
+
+[node name="BulletPhysicsController" type="Node2D" node_paths=PackedStringArray("bullet")]
+script = ExtResource("1_y777e")
+bullet = NodePath("")
+speed = 100

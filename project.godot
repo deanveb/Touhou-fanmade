@@ -11,7 +11,8 @@ config_version=5
 [application]
 
 config/name="Touhou(fanmade)"
-config/features=PackedStringArray("4.2", "Forward Plus")
+run/main_scene="res://Scene/test.tscn"
+config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
 [debug]
@@ -25,6 +26,10 @@ window/size/always_on_top=true
 [editor]
 
 movie_writer/movie_file="D:/Godot/Touhou(fanmade)/Movies/Movies.avi"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/trail_2d/plugin.cfg")
 
 [rendering]
 

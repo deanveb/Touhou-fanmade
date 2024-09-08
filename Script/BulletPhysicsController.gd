@@ -3,17 +3,24 @@ extends Node2D
 @export_category("nodes")
 @export var bullet : CharacterBody2D
 @export var animation : AnimationPlayer
+@export var collision : CollisionShape2D
 @export_category("varibles")
 @export var speed : int
+@export var wave_speed : int
 @export var radius : float
-@export var start_speed : int
-@export var end_speed : int
-@export var mid_speed : int
+@export_category("types")
+@export var wave : bool
 
 func _ready() -> void:
 	if animation:
-		animation.play("movement")
+		animation.play("wave")
 
 func _process(delta: float) -> void:
-	bullet.velocity = Vector2(cos(bullet.rotation), sin(bullet.rotation)) * speed
+	var directionx : float = cos(bullet.rotation)
+	var directiony : float = sin(bullet.rotation)
+	bullet.velocity = Vector2(directionx, directiony) * speed
+	
+	if wave:
+		collision.position.x += wave_speed
+	
 	bullet.move_and_slide()

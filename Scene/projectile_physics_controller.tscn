@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dgb7ofu8fx1np"]
+
+[ext_resource type="Script" path="res://Script/ProjectilePhysicsController.gd" id="1_y777e"]
+
+[node name="ProjectilePhysicsController" type="Node2D"]
+script = ExtResource("1_y777e")
+speed = 100

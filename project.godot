@@ -29,7 +29,7 @@ movie_writer/movie_file="D:/Godot/Touhou(fanmade)/Movies/Movies.avi"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/trail_2d/plugin.cfg")
+enabled=PackedStringArray()
 
 [rendering]
 

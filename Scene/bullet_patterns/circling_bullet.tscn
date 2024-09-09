@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dum3uoyn43sto"]
+
+[ext_resource type="PackedScene" uid="uid://duvqcvuhso1tw" path="res://Scene/bullet_patterns/bullet.tscn" id="1_7o0ye"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x5ke7"]
+
+[node name="Bullet" instance=ExtResource("1_7o0ye")]
+position = Vector2(185, 88)
+
+[node name="CollisionShape2D" parent="." index="0"]
+shape = SubResource("RectangleShape2D_x5ke7")
+
+[node name="ProjectilePhysicsController" parent="." index="1" node_paths=PackedStringArray("bullet", "collision")]
+bullet = NodePath("..")
+straight = true
+rotating = true
+collision = NodePath("../CollisionShape2D")
+rotate_speed = 1.0

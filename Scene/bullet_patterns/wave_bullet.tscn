@@ -11,7 +11,9 @@ atlas = ExtResource("2_lr3en")
 region = Rect2(791, 39, 14, 12)
 
 [node name="WaveBullet" instance=ExtResource("1_5esm7")]
-position = Vector2(125, 134)
+position = Vector2(245, 111)
+rotation = 0.544632
+scale = Vector2(1, 1.14)
 
 [node name="CollisionShape2D" parent="." index="0"]
 shape = SubResource("RectangleShape2D_6ye0d")
@@ -24,5 +26,5 @@ bullet = NodePath("..")
 wave = true
 straight = true
 collision = NodePath("../CollisionShape2D")
-height = 20
-duration = 1.5
+rotate_to = 60.0
+duration = 1.0

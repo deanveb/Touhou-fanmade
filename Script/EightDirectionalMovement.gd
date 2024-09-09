@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 var speed : int = 400
 var slow : int = 200
-@onready var shift_fx:CPUParticles2D = $CPUParticles2D
+@onready var shift_fx : CPUParticles2D = $CPUParticles2D
 
 func _ready() -> void:
 	shift_fx.emitting = false

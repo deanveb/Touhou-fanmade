@@ -1,13 +1,13 @@
 [gd_scene load_steps=4 format=3 uid="uid://cj87rit3kctwc"]
 
-[ext_resource type="PackedScene" uid="uid://duvqcvuhso1tw" path="res://Scene/bullet_patterns/bullet.tscn" id="1_d5wao"]
-[ext_resource type="Texture2D" uid="uid://w02rrv8v3rrr" path="res://Sprite/SpriteSheet/PC Computer - Touhou Chireiden Subterranean Animism - Bullets.png" id="2_lboeb"]
+[ext_resource type="PackedScene" uid="uid://duvqcvuhso1tw" path="res://Scene/bullet_patterns/bullet.tscn" id="1_wp5qf"]
+[ext_resource type="Texture2D" uid="uid://w02rrv8v3rrr" path="res://Sprite/SpriteSheet/PC Computer - Touhou Chireiden Subterranean Animism - Bullets.png" id="2_yx5i2"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nqtl2"]
-atlas = ExtResource("2_lboeb")
+atlas = ExtResource("2_yx5i2")
 region = Rect2(302, 5, 60, 63)
 
-[node name="AppearBullet" instance=ExtResource("1_d5wao")]
+[node name="TeleportBullet" instance=ExtResource("1_wp5qf")]
 position = Vector2(507, 40)
 rotation = 1.5708
 

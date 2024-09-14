@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://kl6a81f7ju7v"
+
+[deps]
+
+files=["res://dev_tools/get_coord_path2d/output.y1.translation", "res://dev_tools/get_coord_path2d/output.y2.translation"]
+
+source_file="res://dev_tools/get_coord_path2d/output.csv"
+dest_files=["res://dev_tools/get_coord_path2d/output.y1.translation", "res://dev_tools/get_coord_path2d/output.y2.translation"]
+
+[params]
+
+compress=true
+delimiter=0

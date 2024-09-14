@@ -6,8 +6,9 @@ from csv import writer
 y = Symbol('y')
 
 def main():
-    # TODO: promts input for gap and add a bat file
     # Fix Cases with no a,b
+    # TODO: increase R if they write ^2
+    # Make gap a real number
     equations = []
     with open("input.txt", 'r') as f:
         equation = f.readline()
@@ -19,7 +20,8 @@ def main():
     for equation in equations:
         coords = []
         if "^{2" in equation:
-            coords = get_circle_coord(equation, 1, 1)
+            gap = int(input("Distance between each points(interger only)="))
+            coords = get_circle_coord(equation, 1, gap)
             for coord in coords:
                     if len(coord) == 3 and coord[1] < coord[2]:
                         coord[1], coord[2] = coord[2], coord[1]
@@ -62,7 +64,7 @@ def get_circle_coord(equation, multiplier, gap):
     # solve((gap - int(varnames[0]) * -1)**2 + (y - int(varnames[1]) * -1)**2 - int(varnames[2]), y)
     for result in results:
         for j in range(len(result)):
-            result[j] = Float(N(result[j] * multiplier), 5)
+            result[j] = Float(N(result[j]), 5)
     return results
 
 def clean_up(equation):

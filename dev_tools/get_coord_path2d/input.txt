@@ -1,1 +1,1 @@
-\left(x-\ 2\right)^{2\ }+\ \left(y+1\right)^{2\ }=\ 6400
+\left(x+1\right)^{2}+\left(y-1\right)^{2} = 2500

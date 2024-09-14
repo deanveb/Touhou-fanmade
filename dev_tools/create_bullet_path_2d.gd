@@ -33,4 +33,9 @@ func _ready() -> void:
 	curve.add_point(Vector2(float(coords[0]["x"]), float(coords[0]["y1"])))
 	bullet_pattern.curve = curve
 	bullet_pattern.scale = Vector2(1, 1) * zoom
+	
+	var scene : PackedScene = PackedScene.new()
+	scene.pack(bullet_pattern)
+	ResourceSaver.save(scene, "res://dev_tools/get_coord_path2d/bullet_pattern.tscn")
+	
 	add_child(bullet_pattern)

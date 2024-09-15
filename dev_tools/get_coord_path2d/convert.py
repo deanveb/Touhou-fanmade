@@ -14,10 +14,10 @@ def main():
             equation = f.readline()
         
     datas = []
+    gap = float(input("Distance="))
     for equation in equations:
         coords = []
         if "^{2" in equation:
-            gap = float(input("Distance between each points(interger only)="))
             coords = get_circle_coord(equation, 1, gap)
             for coord in coords:
                     if len(coord) == 3 and coord[1] < coord[2]:
@@ -53,15 +53,17 @@ def get_circle_coord(equation, multiplier, gap):
     # Process varibles
     R = round(sqrt(varnames[2]), ndigits=5)
     results = []
-    x = round(varnames[0] - R, ndigits=5)
+    x = round((varnames[0] * -1) - R, ndigits=5)
     # range(varnames[0] - R, varnames[0] + R + 1, gap)
-    while x < varnames[0] + R:
+    while x < (varnames[0] * -1) + R:
         results.append([x] + solve((x + varnames[0])**2 + (y + varnames[1])**2 - varnames[2], y))
         x = round(x + gap, ndigits=5)
-    # solve((gap - int(varnames[0]) * -1)**2 + (y - int(varnames[1]) * -1)**2 - int(varnames[2]), y)
+
     for result in results:
         for j in range(len(result)):
             result[j] = round(N(result[j]), ndigits=5)
+    if results[len(results) - 1][1] != R:
+        results.append([R, varnames[1]])
     return results
 
 def clean_up(equation):

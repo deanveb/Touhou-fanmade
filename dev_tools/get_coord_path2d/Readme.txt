@@ -1,0 +1,1 @@
+For the circle formula always use (x - a)^2 + (y - b)^2 = R^2, x^2 + y^2 = R^2 will throw an error

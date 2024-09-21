@@ -6,10 +6,10 @@ uid="uid://kl6a81f7ju7v"
 
 [deps]
 
-files=["res://dev_tools/get_coord_path2d/output.y1.translation", "res://dev_tools/get_coord_path2d/output.y2.translation"]
+files=["res://dev_tools/get_coord_path2d/output.y.translation"]
 
 source_file="res://dev_tools/get_coord_path2d/output.csv"
-dest_files=["res://dev_tools/get_coord_path2d/output.y1.translation", "res://dev_tools/get_coord_path2d/output.y2.translation"]
+dest_files=["res://dev_tools/get_coord_path2d/output.y.translation"]
 
 [params]
 

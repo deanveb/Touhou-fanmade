@@ -4,7 +4,7 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	#TODO: loop twice to get y1, y2 
+	#TODO: loop twice to get y, y1 
 	#TODO: make path2d point at the center
 	
 	var file : FileAccess = FileAccess.open("res://dev_tools/get_coord_path2d/output.csv", FileAccess.READ)
@@ -30,15 +30,16 @@ func _ready() -> void:
 		var bullet_pattern : Path2D = Path2D.new() as Path2D
 		var curve : Curve2D = Curve2D.new()
 		for coord : Dictionary in coords:
-			var point : Vector2 = Vector2(float(coord["x"]), float(coord["y1"]))
+			var point : Vector2 = Vector2(float(coord["x"]), float(coord["y"]))
 			curve.add_point(point)
 		for i in range(coords.size() - 1, -1, -1):
 			if len(coords[i]) != 3:
 				continue
-			var point : Vector2 = Vector2(float(coords[i]["x"]), float(coords[i]["y2"]))
+			var point : Vector2 = Vector2(float(coords[i]["x"]), float(coords[i]["y1"]))
 			curve.add_point(point)
 		# Sometimes the last point doesn't reach the starting point so it leaves a gap in the circle 
-		curve.add_point(Vector2(float(coords[0]["x"]), float(coords[0]["y1"])))
+		if len(coords[1]) > 2:
+			curve.add_point(Vector2(float(coords[0]["x"]), float(coords[0]["y"])))
 		bullet_pattern.curve = curve
 		bullet_pattern.scale = Vector2(1, 1) * zoom
 		

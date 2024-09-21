@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://duvqcvuhso1tw" path="res://Scene/bullet_patterns/bullet.tscn" id="1_eawjw"]
 [ext_resource type="Texture2D" uid="uid://w02rrv8v3rrr" path="res://Sprite/SpriteSheet/PC Computer - Touhou Chireiden Subterranean Animism - Bullets.png" id="1_rjmfo"]
-[ext_resource type="PackedScene" uid="uid://clg2y75fi5rk0" path="res://Scene/trail.tscn" id="3_cul41"]
+[ext_resource type="PackedScene" uid="uid://clg2y75fi5rk0" path="res://Scene/Utilities/trail.tscn" id="3_cul41"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_paifn"]
 size = Vector2(7, 7)

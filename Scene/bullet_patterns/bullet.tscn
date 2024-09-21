@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://duvqcvuhso1tw"]
 
-[ext_resource type="PackedScene" uid="uid://dgb7ofu8fx1np" path="res://Scene/projectile_physics_controller.tscn" id="1_1pyeb"]
+[ext_resource type="PackedScene" uid="uid://dgb7ofu8fx1np" path="res://Scene/Utilities/projectile_physics_controller.tscn" id="1_1pyeb"]
 
 [node name="Bullet" type="CharacterBody2D"]
 

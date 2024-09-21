@@ -1,39 +1,68 @@
 from sympy.solvers import solve
 from sympy import Symbol, N, Float
-from math import sqrt
+from math import sqrt, pi
 from csv import writer
+from sympy.parsing import parse_expr
+from sympy.parsing.latex import parse_latex
 
 y = Symbol('y')
+x = Symbol('x')
 
 def main():
     equations = []
     with open("input.txt", 'r') as f:
         equation = f.readline()
         while equation:
-            equations.append(clean_up(equation)) 
+            equations.append(equation) 
             equation = f.readline()
         
     datas = []
-    gap = float(input("Distance="))
+    header = []
     for equation in equations:
         coords = []
         if "^{2" in equation:
-            coords = get_circle_coord(equation, 1, gap)
+            print(equation)
+            gap = float(input("Distance between record="))
+            coords = get_circle_coord(equation, gap, header)
             for coord in coords:
                     if len(coord) == 3 and coord[1] < coord[2]:
                         coord[1], coord[2] = coord[2], coord[1]
+        else:
+            print(equation)
+            gap = float(input("Distance between record="))
+            length = float(input("Length="))
+            coords = get_coords(equation, gap, length, header)
+            # Research how to turn string into equation
+            # And string is created using this
+            # s = "y = x"
+            # x = 1
+            # s = s.replace("x", "{x}")
+            # print(s.format(x = x))
         datas.append(coords)
-
+    print(header)
     with open("output.csv", "w", newline='') as table:
         write = writer(table)
         # Add header
-        write.writerow(['x', 'y1', 'y2'])
+        write.writerow(header)
         for data in datas:
             for value in data:
                 write.writerow(value)
             write.writerow([])
 
-def get_circle_coord(equation, multiplier, gap):
+def get_coords(equation, gap, length, header : list):
+    i : float = 0
+    length *= pi
+    coord : float = 0.0
+    coords : list = []
+    while i < length: 
+        sympy_equation = parse_latex(equation.replace('x', str(i)))
+        coord = N(sympy_equation, 5)
+        coords.append([i, coord])
+        i += gap
+    header.extend(['x', 'y'])
+    return coords
+
+def get_circle_coord(equation, gap, header):
     num = ""
     recordable = False
     squared = False
@@ -64,6 +93,7 @@ def get_circle_coord(equation, multiplier, gap):
             result[j] = round(N(result[j]), ndigits=5)
     if results[len(results) - 1][1] != R:
         results.append([R, varnames[1]])
+    header.extend(['x', 'y', 'y1'])
     return results
 
 def clean_up(equation):

@@ -1,9 +1,9 @@
 [gd_scene load_steps=3 format=3 uid="uid://buw8cmu5e6ckw"]
 
-[ext_resource type="Texture2D" uid="uid://bdpyq1ujj0mg" path="res://Sprite/SpriteSheet/PC Computer - Touhou Kanjuden Legacy of Lunatic Kingdom - Game HUD (1).png" id="1_3ixpa"]
+[ext_resource type="Texture2D" uid="uid://bdpyq1ujj0mg" path="res://Sprite/SpriteSheet/PC Computer - Touhou Kanjuden Legacy of Lunatic Kingdom - Game HUD (1).png" id="1_v7ht1"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vn4gj"]
-atlas = ExtResource("1_3ixpa")
+atlas = ExtResource("1_v7ht1")
 region = Rect2(65, 26, 445, 960)
 
 [node name="Node2D" type="Node2D"]

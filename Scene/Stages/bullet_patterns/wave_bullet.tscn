@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://dl0c03t1trvqv"]
+
+[ext_resource type="PackedScene" uid="uid://ljtc2lh245ln" path="res://Scene/Utilities/base_bullet.tscn" id="1_4tolq"]
+[ext_resource type="Curve2D" uid="uid://dhqb2j7i2lhso" path="res://Scene/Stages/Paths/wave_path.tres" id="2_pdrwt"]
+
+[node name="Node2D" instance=ExtResource("1_4tolq")]
+
+[node name="Path2D" parent="." index="0"]
+curve = ExtResource("2_pdrwt")

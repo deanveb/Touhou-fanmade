@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Touhou(fanmade)"
-run/main_scene="res://Scene/Stages/base.tscn"
+run/main_scene="res://Scene/Stages/base_stage.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -33,6 +33,14 @@ movie_writer/movie_file="D:/Godot/Touhou(fanmade)/Movies/Movies.avi"
 [editor_plugins]
 
 enabled=PackedStringArray()
+
+[layer_names]
+
+2d_physics/layer_1="Player"
+2d_physics/layer_2="Enemies"
+2d_physics/layer_3="Item"
+2d_physics/layer_4="Bullet"
+2d_physics/layer_5="Utilities"
 
 [rendering]
 

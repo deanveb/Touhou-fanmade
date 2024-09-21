@@ -1,4 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://cacdlik3hhhda"]
+[gd_scene load_steps=3 format=3 uid="uid://b1kbm33n1m35h"]
+
+[ext_resource type="Script" path="res://Script/sinwave_bullet_path_2d.gd" id="1_xc20n"]
 
 [sub_resource type="Curve2D" id="Curve2D_am253"]
 _data = {
@@ -6,10 +8,8 @@ _data = {
 }
 point_count = 87
 
-[node name="Node2D" type="Node2D"]
-
-[node name="@Path2D@2" type="Path2D" parent="."]
-position = Vector2(258, -292)
-rotation = 1.5757
+[node name="WavePath" type="Path2D"]
+position = Vector2(92, 448)
 scale = Vector2(3, 3)
 curve = SubResource("Curve2D_am253")
+script = ExtResource("1_xc20n")

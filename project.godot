@@ -11,7 +11,8 @@ config_version=5
 [application]
 
 config/name="Touhou(fanmade)"
-run/main_scene="res://Scene/Stages/base_stage.tscn"
+
+run/main_scene="res://Scene/test.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -41,7 +42,5 @@ enabled=PackedStringArray()
 2d_physics/layer_3="Item"
 2d_physics/layer_4="Bullet"
 2d_physics/layer_5="Utilities"
-
-[rendering]
 
 textures/canvas_textures/default_texture_filter=0

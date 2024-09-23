@@ -26,3 +26,4 @@ straight = true
 
 [node name="Trail" parent="." index="2" node_paths=PackedStringArray("parent") instance=ExtResource("3_cul41")]
 parent = NodePath("../CollisionShape2D")
+

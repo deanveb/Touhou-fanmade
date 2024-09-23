@@ -26,5 +26,8 @@ bullet = NodePath("..")
 wave = true
 straight = true
 collision = NodePath("../CollisionShape2D")
+
 rotate_to = 60.0
 duration = 1.0
+height = 20
+duration = 1.5

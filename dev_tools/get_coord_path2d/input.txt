@@ -1,0 +1,1 @@
+\sin\left(\frac{x}{50}\right)\cdot50

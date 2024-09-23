@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://b6ibywa8y0alm"]
+
+[ext_resource type="PackedScene" uid="uid://dcvat7diyja3l" path="res://Character.tscn" id="1_qmcc2"]
+[ext_resource type="PackedScene" uid="uid://dvmqebkqrxdeg" path="res://Aim.tscn" id="2_2vv4i"]
+[ext_resource type="PackedScene" uid="uid://hero7l5n4tvm" path="res://hurtbox.tscn" id="3_3e8el"]
+
+[node name="Main" type="Node2D"]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_qmcc2")]
+position = Vector2(106, 70)
+
+[node name="Area2D" parent="." instance=ExtResource("2_2vv4i")]
+position = Vector2(1354, 323)
+
+[node name="Hurtbox" parent="." instance=ExtResource("3_3e8el")]
+position = Vector2(556, 545)

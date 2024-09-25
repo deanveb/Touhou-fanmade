@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://cnr5iu7g86odc"]
 
-[ext_resource type="PackedScene" uid="uid://duvqcvuhso1tw" path="res://Scene/bullet_patterns/bullet.tscn" id="1_eawjw"]
+[ext_resource type="PackedScene" uid="uid://duvqcvuhso1tw" path="res://Scene/Utilities/bullet_patterns/bullet.tscn" id="1_eawjw"]
 [ext_resource type="Texture2D" uid="uid://w02rrv8v3rrr" path="res://Sprite/SpriteSheet/PC Computer - Touhou Chireiden Subterranean Animism - Bullets.png" id="1_rjmfo"]
 [ext_resource type="PackedScene" uid="uid://clg2y75fi5rk0" path="res://Scene/Utilities/trail.tscn" id="3_cul41"]
 
@@ -26,4 +26,3 @@ straight = true
 
 [node name="Trail" parent="." index="2" node_paths=PackedStringArray("parent") instance=ExtResource("3_cul41")]
 parent = NodePath("../CollisionShape2D")
-

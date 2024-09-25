@@ -1,6 +1,6 @@
 -Bullet_path_follow_2d.tscn is used by base_bullet to make PathFollow2D
 -Projectile_physics_controller.tscn is to make bullets actually move in space:
-    +More info in Projectile_physics_controller.gd
+	+More info in Projectile_physics_controller.gd
 -Trail.tscn is for debugging purpose
 -Base_bulle.tscn:
 	+ Is for creating bullet

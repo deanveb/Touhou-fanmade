@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dl0c03t1trvqv"]
+
+[ext_resource type="PackedScene" uid="uid://ljtc2lh245ln" path="res://Scene/Utilities/base_bullet.tscn" id="1_4tolq"]
+[ext_resource type="Curve2D" uid="uid://gllovnv55nk7" path="res://Scene/Stages/Stage1/Paths/wave_path.tres" id="2_p2ts4"]
+
+[node name="WaveBullet" instance=ExtResource("1_4tolq")]
+
+[node name="Path2D" parent="." index="0"]
+curve = ExtResource("2_p2ts4")
+bullet_speed = 0.5
+spawnrate = 0.05
+
+[node name="Timer" parent="." index="1"]
+autostart = false

@@ -1,16 +1,220 @@
-[gd_scene load_steps=4 format=3 uid="uid://b6ibywa8y0alm"]
+[gd_scene load_steps=2 format=3 uid="uid://dqu2kbawd5nd"]
 
-[ext_resource type="PackedScene" uid="uid://dcvat7diyja3l" path="res://Character.tscn" id="1_qmcc2"]
-[ext_resource type="PackedScene" uid="uid://dvmqebkqrxdeg" path="res://Aim.tscn" id="2_2vv4i"]
-[ext_resource type="PackedScene" uid="uid://hero7l5n4tvm" path="res://hurtbox.tscn" id="3_3e8el"]
+[ext_resource type="PackedScene" uid="uid://dl0c03t1trvqv" path="res://Scene/Stages/Stage1/bullet_patterns/wave_bullet.tscn" id="1_5lguh"]
 
 [node name="Main" type="Node2D"]
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("1_qmcc2")]
-position = Vector2(106, 70)
+[node name="WaveBullet" parent="." instance=ExtResource("1_5lguh")]
 
-[node name="Area2D" parent="." instance=ExtResource("2_2vv4i")]
-position = Vector2(1354, 323)
+[node name="WaveBullet2" parent="." instance=ExtResource("1_5lguh")]
+position = Vector2(-12, -190)
 
-[node name="Hurtbox" parent="." instance=ExtResource("3_3e8el")]
-position = Vector2(556, 545)
+[node name="WaveBullet3" parent="." instance=ExtResource("1_5lguh")]
+position = Vector2(15, 165)
+
+[node name="WaveBullet4" parent="." instance=ExtResource("1_5lguh")]
+position = Vector2(26, 285)
+
+[node name="WaveBullet5" parent="." instance=ExtResource("1_5lguh")]
+position = Vector2(15, 381)
+
+[node name="WaveBullet6" parent="." instance=ExtResource("1_5lguh")]
+position = Vector2(18, 96)
+
+[node name="WaveBullet7" parent="." instance=ExtResource("1_5lguh")]
+position = Vector2(-1, -81)
+
+[node name="WaveBullet8" parent="." instance=ExtResource("1_5lguh")]
+position = Vector2(-17, -246)
+
+[node name="WaveBullet9" parent="." instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet10" parent="." instance=ExtResource("1_5lguh")]
+position = Vector2(-26, -360)
+
+[node name="WaveBullet11" parent="." instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -453)
+
+[node name="WaveBullet12" parent="." instance=ExtResource("1_5lguh")]
+position = Vector2(-23, -564)
+
+[node name="WaveBullet13" parent="." instance=ExtResource("1_5lguh")]
+position = Vector2(-1115, -519)
+
+[node name="WaveBullet14" parent="." instance=ExtResource("1_5lguh")]
+position = Vector2(1152, -491)
+
+[node name="WaveBullet15" parent="." instance=ExtResource("1_5lguh")]
+position = Vector2(-1131, -411)
+
+[node name="WaveBullet16" parent="." instance=ExtResource("1_5lguh")]
+position = Vector2(-1080, -324)
+
+[node name="WaveBullet17" parent="." instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)
+
+[node name="WaveBullet9" parent="WaveBullet17/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9/WaveBullet9" instance=ExtResource("1_5lguh")]
+position = Vector2(-20, -297)

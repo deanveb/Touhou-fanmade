@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://nrqlc86e31r"]
 
-[ext_resource type="PackedScene" uid="uid://duvqcvuhso1tw" path="res://Scene/bullet_patterns/bullet.tscn" id="1_5esm7"]
+[ext_resource type="PackedScene" uid="uid://duvqcvuhso1tw" path="res://Scene/Utilities/bullet_patterns/bullet.tscn" id="1_5esm7"]
 [ext_resource type="Texture2D" uid="uid://w02rrv8v3rrr" path="res://Sprite/SpriteSheet/PC Computer - Touhou Chireiden Subterranean Animism - Bullets.png" id="2_lr3en"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6ye0d"]
@@ -26,8 +26,5 @@ bullet = NodePath("..")
 wave = true
 straight = true
 collision = NodePath("../CollisionShape2D")
-
 rotate_to = 60.0
-duration = 1.0
-height = 20
 duration = 1.5

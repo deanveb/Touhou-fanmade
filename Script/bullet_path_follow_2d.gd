@@ -9,8 +9,8 @@ signal stop_spawn
 func _ready() -> void:
 	var pattern : Path2D = get_node("..")
 
-func _process(delta: float) -> void:
-	var prev_progress : float = progress_ratio
-	progress_ratio += speed
+func _physics_process(delta: float) -> void:
+	var prev_progress : float = progress_ratio * delta
+	progress_ratio += speed * delta
 	if progress_ratio < prev_progress:
 		stop_spawn.emit()

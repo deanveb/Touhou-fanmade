@@ -1,9 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://l2obkmin6xuu"]
-
-[ext_resource type="Script" path="res://dev_tools/get_coord_path2d/create_bullet_path_2d.gd" id="1_isfy1"]
-
-[node name="Node2D" type="Node2D"]
-script = ExtResource("1_isfy1")
-zoom = 3
-
-[node name="Camera2D" type="Camera2D" parent="."]

@@ -1,5 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://b1aeusvc6kx4p"]
+[gd_scene load_steps=3 format=3 uid="uid://b1aeusvc6kx4p"]
 
 [ext_resource type="PackedScene" uid="uid://buw8cmu5e6ckw" path="res://Scene/Stages/base_stage.tscn" id="1_ilp2c"]
+[ext_resource type="PackedScene" uid="uid://dl0c03t1trvqv" path="res://Scene/Utilities/bullet_patterns/wave_bullet_path2d.tscn" id="2_a6irk"]
 
 [node name="Node2D" instance=ExtResource("1_ilp2c")]
+
+[node name="WaveBullet" parent="." index="1" instance=ExtResource("2_a6irk")]
+position = Vector2(437, -99)
+rotation = 1.5708
+scale = Vector2(1.13997, 0.5)

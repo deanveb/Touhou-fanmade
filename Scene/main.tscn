@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dqu2kbawd5nd"]
 
-[ext_resource type="PackedScene" uid="uid://dl0c03t1trvqv" path="res://Scene/Stages/Stage1/bullet_patterns/wave_bullet.tscn" id="1_5lguh"]
+[ext_resource type="PackedScene" uid="uid://dl0c03t1trvqv" path="res://Scene/Utilities/bullet_patterns/wave_bullet_path2d.tscn" id="1_5lguh"]
 
 [node name="Main" type="Node2D"]
 

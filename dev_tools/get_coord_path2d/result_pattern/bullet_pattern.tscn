@@ -1,9 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://dhkx7ue1g7vjl"]
-
-[ext_resource type="Curve2D" uid="uid://gllovnv55nk7" path="res://Scene/Stages/Stage1/Paths/wave_path.tres" id="1_qugg8"]
-
-[node name="Node2D" type="Node2D"]
-
-[node name="@Path2D@2" type="Path2D" parent="."]
-scale = Vector2(3, 3)
-curve = ExtResource("1_qugg8")

@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://nrqlc86e31r"]
+
+[ext_resource type="PackedScene" uid="uid://duvqcvuhso1tw" path="res://Scene/Utilities/bullet_patterns/bullet.tscn" id="1_5esm7"]
+[ext_resource type="Texture2D" uid="uid://w02rrv8v3rrr" path="res://Sprite/SpriteSheet/PC Computer - Touhou Chireiden Subterranean Animism - Bullets.png" id="2_lr3en"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6ye0d"]
+size = Vector2(7, 6)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8klwd"]
+atlas = ExtResource("2_lr3en")
+region = Rect2(791, 39, 14, 12)
+
+[node name="WaveBullet" instance=ExtResource("1_5esm7")]
+position = Vector2(245, 111)
+rotation = 0.544632
+scale = Vector2(1, 1.14)
+
+[node name="CollisionShape2D" parent="." index="0"]
+shape = SubResource("RectangleShape2D_6ye0d")
+
+[node name="Sprite2D" parent="CollisionShape2D" index="0"]
+texture = SubResource("AtlasTexture_8klwd")
+
+[node name="ProjectilePhysicsController" parent="." index="1" node_paths=PackedStringArray("bullet", "collision")]
+bullet = NodePath("..")
+wave = true
+straight = true
+collision = NodePath("../CollisionShape2D")
+rotate_to = 60.0
+duration = 1.5

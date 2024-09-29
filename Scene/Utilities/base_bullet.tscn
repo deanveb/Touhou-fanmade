@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://ljtc2lh245ln"]
+
+[ext_resource type="Script" path="res://Script/sinwave_bullet_path_2d.gd" id="1_r23ne"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Path2D" type="Path2D" parent="." node_paths=PackedStringArray("timer")]
+position = Vector2(92, 448)
+scale = Vector2(3, 3)
+script = ExtResource("1_r23ne")
+timer = NodePath("../Timer")
+
+[node name="Timer" type="Timer" parent="."]
+process_callback = 0
+wait_time = 0.05
+autostart = true
+
+[connection signal="timeout" from="Timer" to="Path2D" method="_on_timer_timeout"]

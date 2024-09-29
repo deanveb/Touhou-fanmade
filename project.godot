@@ -11,5 +11,36 @@ config_version=5
 [application]
 
 config/name="Touhou(fanmade)"
-config/features=PackedStringArray("4.2", "Forward Plus")
+run/main_scene="res://Scene/test.tscn"
+config/features=PackedStringArray("4.3", "Forward Plus")
+run/max_fps=60
 config/icon="res://icon.svg"
+
+[debug]
+
+gdscript/warnings/untyped_declaration=2
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=960
+window/size/always_on_top=true
+window/stretch/mode="viewport"
+
+[editor]
+
+movie_writer/movie_file="D:/Godot/Touhou(fanmade)/Movies/Movies.avi"
+movie_writer/fps=30
+
+[editor_plugins]
+
+enabled=PackedStringArray()
+
+[layer_names]
+
+2d_physics/layer_1="Player"
+2d_physics/layer_2="Enemies"
+2d_physics/layer_3="Item"
+2d_physics/layer_4="Bullet"
+2d_physics/layer_5="Utilities"
+textures/canvas_textures/default_texture_filter=0

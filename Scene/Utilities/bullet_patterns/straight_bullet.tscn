@@ -1,0 +1,28 @@
+[gd_scene load_steps=6 format=3 uid="uid://cnr5iu7g86odc"]
+
+[ext_resource type="PackedScene" uid="uid://duvqcvuhso1tw" path="res://Scene/Utilities/bullet_patterns/bullet.tscn" id="1_eawjw"]
+[ext_resource type="Texture2D" uid="uid://w02rrv8v3rrr" path="res://Sprite/SpriteSheet/PC Computer - Touhou Chireiden Subterranean Animism - Bullets.png" id="1_rjmfo"]
+[ext_resource type="PackedScene" uid="uid://clg2y75fi5rk0" path="res://Scene/Utilities/trail.tscn" id="3_cul41"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_paifn"]
+size = Vector2(7, 7)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uc20c"]
+atlas = ExtResource("1_rjmfo")
+region = Rect2(568, 151, 12, 12)
+
+[node name="StraightBullet" instance=ExtResource("1_eawjw")]
+position = Vector2(177, 70)
+
+[node name="CollisionShape2D" parent="." index="0"]
+shape = SubResource("RectangleShape2D_paifn")
+
+[node name="Sprite2D" parent="CollisionShape2D" index="0"]
+texture = SubResource("AtlasTexture_uc20c")
+
+[node name="ProjectilePhysicsController" parent="." index="1" node_paths=PackedStringArray("bullet")]
+bullet = NodePath("..")
+straight = true
+
+[node name="Trail" parent="." index="2" node_paths=PackedStringArray("parent") instance=ExtResource("3_cul41")]
+parent = NodePath("../CollisionShape2D")

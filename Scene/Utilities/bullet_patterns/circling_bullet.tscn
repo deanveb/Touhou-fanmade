@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dum3uoyn43sto"]
 
-[ext_resource type="PackedScene" uid="uid://duvqcvuhso1tw" path="res://Scene/Utilities/bullet_patterns/bullet.tscn" id="1_7o0ye"]
+[ext_resource type="PackedScene" uid="uid://duvqcvuhso1tw" path="res://Scene/Utilities/bullet_patterns/base_bullet.tscn" id="1_7o0ye"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x5ke7"]
 

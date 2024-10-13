@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://d1v0gg10v3s4h"]
+
+[ext_resource type="Texture2D" uid="uid://w02rrv8v3rrr" path="res://Sprite/SpriteSheet/PC Computer - Touhou Chireiden Subterranean Animism - Bullets.png" id="1_ehxae"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lgqjq"]
+atlas = ExtResource("1_ehxae")
+region = Rect2(807, 100, 14, 17)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qiwar"]
+
+[node name="Laser" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_repeat = 2
+position = Vector2(7, 0.5)
+texture = SubResource("AtlasTexture_lgqjq")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(7, 0.5)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+scale = Vector2(0.71873, 0.851822)
+shape = SubResource("RectangleShape2D_qiwar")

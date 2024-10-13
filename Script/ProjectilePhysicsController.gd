@@ -1,8 +1,8 @@
 extends Node2D
 
 @export_category("Target")
-## The actual bullet (with CharacterBody2D data type)
-@export var bullet : CharacterBody2D
+## The actual bullet (with Area2D data type)
+@export var bullet : Area2D
 @export_category("Modes")
 @export var wave : bool
 @export var straight : bool
@@ -43,10 +43,9 @@ func _process(_delta: float) -> void:
 	var directionx : float = cos(bullet.rotation)
 	var directiony : float = sin(bullet.rotation)
 	if straight:
-		bullet.velocity = Vector2(directionx, directiony) * speed 
+		bullet.global_position += Vector2(directionx, directiony) * speed 
 	if rotating:
 		bullet.rotation += deg_to_rad(rotate_speed)
-	bullet.move_and_slide()
 
 func step_delay_timeout() -> void:
 	var directionx : float = cos(bullet.rotation)

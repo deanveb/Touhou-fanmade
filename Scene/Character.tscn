@@ -9,7 +9,7 @@
 atlas = ExtResource("1_woypx")
 region = Rect2(15, 16, 609, 227)
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D"]
 scale = Vector2(2.89807, 4.15788)
 script = ExtResource("1_1ujn7")
 bullet_speed = 100.0

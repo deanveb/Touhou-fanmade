@@ -1,0 +1,39 @@
+[gd_scene load_steps=5 format=3 uid="uid://dx3l52uo1aoqb"]
+
+[ext_resource type="PackedScene" uid="uid://cnr5iu7g86odc" path="res://Scene/Utilities/bullet_patterns/straight_bullet.tscn" id="1_4f71q"]
+[ext_resource type="Script" path="res://Scene/Stages/Stage2/scripts/slime_bomb.gd" id="2_0fdrg"]
+[ext_resource type="Texture2D" uid="uid://ba2l5hsbro1c2" path="res://Sprite/slime_splash.jpg" id="3_8ha4i"]
+[ext_resource type="Texture2D" uid="uid://d73r538do053" path="res://Sprite/Slimeball_JE2_BE2.webp" id="3_dhhsk"]
+
+[node name="SlimeBomb" instance=ExtResource("1_4f71q")]
+rotation = 0.641899
+script = ExtResource("2_0fdrg")
+
+[node name="Sprite2D" parent="CollisionShape2D" index="0"]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_dhhsk")
+
+[node name="ProjectilePhysicsController" parent="." index="1"]
+speed = 10
+
+[node name="ExplodeTime" type="Timer" parent="." index="2"]
+one_shot = true
+
+[node name="SlimeSplash" type="Sprite2D" parent="." index="3"]
+visible = false
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_8ha4i")
+
+[node name="Area2D" type="Area2D" parent="SlimeSplash" index="0"]
+monitoring = false
+monitorable = false
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="SlimeSplash/Area2D" index="0"]
+scale = Vector2(1, 1)
+polygon = PackedVector2Array(-180, 180, -180, -180, 180, -180, 180, 180)
+
+[node name="Despawn" type="Timer" parent="." index="4"]
+wait_time = 2.0
+
+[connection signal="timeout" from="ExplodeTime" to="." method="_on_explode_time_timeout"]
+[connection signal="timeout" from="Despawn" to="." method="_on_despawn_timeout"]

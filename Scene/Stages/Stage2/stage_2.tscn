@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://c5eun5hd0fihh"]
+
+[ext_resource type="PackedScene" uid="uid://buw8cmu5e6ckw" path="res://Scene/Stages/base_stage.tscn" id="1_scabm"]
+[ext_resource type="PackedScene" uid="uid://dcvat7diyja3l" path="res://Scene/Character.tscn" id="2_nxt3p"]
+[ext_resource type="PackedScene" uid="uid://cqummgshtj2o2" path="res://Scene/Stages/Stage2/boss_slime.tscn" id="3_t15ua"]
+
+[node name="Stage2" instance=ExtResource("1_scabm")]
+
+[node name="Player" parent="." index="1" instance=ExtResource("2_nxt3p")]
+position = Vector2(444, 792)
+
+[node name="Boss" parent="." index="2" instance=ExtResource("3_t15ua")]
+position = Vector2(447, 96)
+travel_time = 1.5
+slimeball_amount = 100

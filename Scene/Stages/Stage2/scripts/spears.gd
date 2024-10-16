@@ -1,10 +1,11 @@
 extends Area2D
 
+const SPEARS = preload("res://Scene/Stages/Stage2/BulletPattern/spears.tscn")
+
 @export var ammount_per_split : int = 1
 @export var generation_limit : int
 @onready var delay: Timer = $Delay
 
-const SPEARS = preload("res://Scene/Stages/Stage2/BulletPattern/spears.tscn")
 var generation : int = 0
 var spears_container : Array
 

@@ -1,1 +1,1 @@
-100\sin\left(\frac{x}{50}\right)
+\sin\left(x\frac{1}{25}\right)\cdot30

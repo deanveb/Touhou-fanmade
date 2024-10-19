@@ -1,10 +1,11 @@
 extends CharacterBody2D 
 
-var speed : int = 400
-var slow : int = 200
-var bulletOffset : Vector2 = Vector2(-30,200)
+@export var speed : int = 400
+@export var slow : int = 200
+@export var bullet_speed : float
+var bulletOffset : Vector2 = Vector2(0, -50)
 @onready var shift_fx:CPUParticles2D = $CPUParticles2D
-@onready var bulletScene : PackedScene = preload("res://Aim.tscn")
+@onready var bulletScene : PackedScene = preload("res://Scene/Utilities/bullet_patterns/straight_bullet.tscn")
 
 func _ready() -> void:
 	shift_fx.emitting = false
@@ -19,7 +20,10 @@ func get_input() -> void:
 
 func shoot() -> void:
 	var bullet : Area2D = bulletScene.instantiate()
+	var bullet_controller : Node2D = bullet.get_node("ProjectilePhysicsController")
 	bullet.position = position + bulletOffset
+	bullet.rotation = deg_to_rad(-90)
+	bullet_controller.speed = bullet_speed
 	get_parent().add_child(bullet)
 
 func _physics_process(delta: float) -> void:

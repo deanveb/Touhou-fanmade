@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://dwp3h7nr88xel"]
+
+[ext_resource type="PackedScene" uid="uid://duvqcvuhso1tw" path="res://Scene/Utilities/bullet_patterns/base_bullet.tscn" id="1_ec08a"]
+[ext_resource type="Texture2D" uid="uid://w02rrv8v3rrr" path="res://Sprite/SpriteSheet/PC Computer - Touhou Chireiden Subterranean Animism - Bullets.png" id="2_5pkg0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_paifn"]
+size = Vector2(7, 7)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uc20c"]
+atlas = ExtResource("2_5pkg0")
+region = Rect2(568, 151, 12, 12)
+
+[node name="StraightBullet" instance=ExtResource("1_ec08a")]
+position = Vector2(177, 70)
+scale = Vector2(5, 5)
+
+[node name="CollisionShape2D" parent="." index="0"]
+shape = SubResource("RectangleShape2D_paifn")
+
+[node name="Sprite2D" parent="CollisionShape2D" index="0"]
+texture = SubResource("AtlasTexture_uc20c")
+
+[node name="ProjectilePhysicsController" parent="." index="1" node_paths=PackedStringArray("bullet")]
+bullet = NodePath("..")
+straight = true
+speed = 10

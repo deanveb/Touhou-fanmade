@@ -1,11 +1,39 @@
-[gd_scene load_steps=3 format=3 uid="uid://b1aeusvc6kx4p"]
+[gd_scene load_steps=6 format=3 uid="uid://b1aeusvc6kx4p"]
 
 [ext_resource type="PackedScene" uid="uid://buw8cmu5e6ckw" path="res://Scene/Stages/base_stage.tscn" id="1_ilp2c"]
 [ext_resource type="PackedScene" uid="uid://dl0c03t1trvqv" path="res://Scene/Utilities/bullet_patterns/wave_bullet_path2d.tscn" id="2_a6irk"]
+[ext_resource type="PackedScene" uid="uid://dcvat7diyja3l" path="res://Scene/Character.tscn" id="2_wi660"]
+[ext_resource type="PackedScene" uid="uid://dwp3h7nr88xel" path="res://Scene/Stages/Stage1/bullet_patterns/white_hole.tscn" id="4_5clcm"]
+[ext_resource type="PackedScene" uid="uid://d1v0gg10v3s4h" path="res://Scene/Stages/Stage1/bullet_patterns/laser.tscn" id="5_pjgm7"]
 
-[node name="Node2D" instance=ExtResource("1_ilp2c")]
+[node name="Stage1" instance=ExtResource("1_ilp2c")]
 
-[node name="WaveBullet" parent="." index="1" instance=ExtResource("2_a6irk")]
-position = Vector2(437, -99)
+[node name="CharacterBody2D" parent="." index="1" instance=ExtResource("2_wi660")]
+position = Vector2(429, 854)
+scale = Vector2(2.3, 3.299)
+bullet_speed = 10.0
+
+[node name="WaveBullet" parent="." index="2" instance=ExtResource("2_a6irk")]
+position = Vector2(452, -275)
 rotation = 1.5708
-scale = Vector2(1.13997, 0.5)
+scale = Vector2(0.673648, 0.531196)
+
+[node name="StraightBullet" parent="." index="3" instance=ExtResource("4_5clcm")]
+position = Vector2(430, 345)
+rotation = 1.5708
+scale = Vector2(15, 15)
+
+[node name="Laser" parent="." index="4" instance=ExtResource("5_pjgm7")]
+position = Vector2(240, 90)
+rotation = 1.66008
+scale = Vector2(63.56, 1)
+
+[node name="Laser2" parent="." index="5" instance=ExtResource("5_pjgm7")]
+position = Vector2(620, 78)
+rotation = 1.48178
+scale = Vector2(63.56, 1)
+
+[node name="WaveBullet2" parent="." index="6" instance=ExtResource("2_a6irk")]
+position = Vector2(414, 1461)
+rotation = -1.5708
+scale = Vector2(0.673648, 0.531196)

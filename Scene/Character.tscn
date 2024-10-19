@@ -1,24 +1,27 @@
-[gd_scene load_steps=4 format=3 uid="uid://dcvat7diyja3l"]
+[gd_scene load_steps=5 format=3 uid="uid://dcvat7diyja3l"]
 
-[ext_resource type="Script" path="res://EightDirectionalMovement.gd" id="1_jof3k"]
-[ext_resource type="Texture2D" uid="uid://d0bwi22v4e34k" path="res://123386.png" id="2_hani5"]
+[ext_resource type="Script" path="res://Script/Character.gd" id="1_1ujn7"]
+[ext_resource type="Texture2D" uid="uid://1bwbbs5b4mls" path="res://Sprite/SpriteSheet/PC Computer - Touhou Fuujinroku Mountain of Faith - Playable Characters.png" id="1_woypx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1debo"]
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
-script = ExtResource("1_jof3k")
+[sub_resource type="AtlasTexture" id="AtlasTexture_uos43"]
+atlas = ExtResource("1_woypx")
+region = Rect2(15, 16, 609, 227)
+
+[node name="Player" type="CharacterBody2D"]
+scale = Vector2(2.89807, 4.15788)
+script = ExtResource("1_1ujn7")
+bullet_speed = 100.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(448, 474)
 shape = SubResource("RectangleShape2D_1debo")
 
 [node name="CPUParticles2D" type="CPUParticles2D" parent="."]
-position = Vector2(447, 475)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(442, 471)
-scale = Vector2(1.49661, 1.74188)
-texture = ExtResource("2_hani5")
+scale = Vector2(0.627591, 0.458275)
+texture = SubResource("AtlasTexture_uos43")
 hframes = 20
 vframes = 5

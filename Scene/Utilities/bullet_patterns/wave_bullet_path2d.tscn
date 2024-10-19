@@ -1,13 +1,12 @@
 [gd_scene load_steps=3 format=3 uid="uid://dl0c03t1trvqv"]
 
-[ext_resource type="PackedScene" uid="uid://ljtc2lh245ln" path="res://Scene/Utilities/base_bullet.tscn" id="1_1w5lb"]
-[ext_resource type="Curve2D" uid="uid://biioo2k37wpdm" path="res://dev_tools/create_path2d_using_graph/result_pattern/bullet_pattern0.tres" id="2_6xjg5"]
+[ext_resource type="PackedScene" uid="uid://ljtc2lh245ln" path="res://Scene/Utilities/base_bullet_path2d.tscn" id="1_1w5lb"]
+[ext_resource type="Curve2D" uid="uid://biioo2k37wpdm" path="res://Scene/Stages/Stage1/bullet_patterns/wave.tres" id="2_6xjg5"]
 
 [node name="WaveBullet" instance=ExtResource("1_1w5lb")]
 
 [node name="Path2D" parent="." index="0"]
 position = Vector2(218, 456)
-scale = Vector2(1.35405, 0.736776)
 curve = ExtResource("2_6xjg5")
 bullet_speed = 0.5
 spawnrate = 0.05
